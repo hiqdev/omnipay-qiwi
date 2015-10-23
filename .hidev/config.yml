@@ -1,0 +1,12 @@
+package:
+    name:           php-merchant-qiwi
+    namespace:      hiqdev\php\merchant\qiwi
+    title:          Qiwi plugin for PHP merchant library
+    type:           library
+    keywords:       php, qiwi, merchant
+    description:    |
+        [Qiwi](https://qiwi.ru/) plugin for [PHP merchant library](https://github.com/hiqdev/php-merchant).
+
+require:
+    hiqdev/hidev-config:        "*"
+    hiqdev/hidev-config-php:    "*"
