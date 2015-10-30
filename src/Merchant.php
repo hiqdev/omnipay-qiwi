@@ -14,7 +14,7 @@ namespace hiqdev\php\merchant\qiwi;
 class Merchant extends \hiqdev\php\merchant\Merchant
 {
     protected static $_defaults = [
-        'name'        => 'qiwi',
+        'system'      => 'qiwi',
         'label'       => 'Qiwi',
         'method'      => 'GET',
         'checkUrl'    => 'https://ishop.qiwi.ru/xml';
