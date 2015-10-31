@@ -59,7 +59,7 @@ class Merchant extends \hiqdev\php\merchant\Merchant
         }
         for ($i=0; $i<10; $i++) {
             sleep(1);
-            $qiwiRequest = $this->fetchQiwiResponse($order, $this->purse, $this->key);
+            $qiwiRequest = $this->fetchQiwiResponse($order, $this->purse, $this->_secret);
             if (!$qiwiRequest) {
                 return 'Server failure';
             }
