@@ -1,5 +1,5 @@
-hiqdev/php-merchant-qiwi changelog
-----------------------------------
+hiqdev/omnipay-qiwi changelog
+-----------------------------
 
 ## Under development
 
