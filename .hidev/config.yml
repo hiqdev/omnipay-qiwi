@@ -1,6 +1,7 @@
 package:
     name:           omnipay-qiwi
     namespace:      hiqdev\php\merchant\qiwi
+    headline:       Omnipay: Qiwi
     title:          Qiwi driver for Omnipay PHP payment library
     type:           library
     license:        MIT

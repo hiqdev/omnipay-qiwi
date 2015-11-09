@@ -1,5 +1,7 @@
-Qiwi driver for Omnipay PHP payment library
-===========================================
+Omnipay: Qiwi
+=============
+
+**Qiwi driver for Omnipay PHP payment library**
 
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/omnipay-qiwi/v/stable)](//packagist.org/packages/hiqdev/omnipay-qiwi)
 [![Total Downloads](https://poser.pugx.org/hiqdev/omnipay-qiwi/downloads)](//packagist.org/packages/hiqdev/omnipay-qiwi)

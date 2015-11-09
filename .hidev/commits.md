@@ -3,6 +3,7 @@ hiqdev/omnipay-qiwi commits history
 
 ## Under development
 
+    - 70c1245 2015-11-09 started redoing to 'omnipay-qiwi' (sol@hiqdev.com)
     - 00ea303 2015-10-31 fixed '_secret' <- 'secret' (sol@hiqdev.com)
 - Added basics
     - 105ce79 2015-10-30 changed: redone to 'system' <- 'name' (sol@hiqdev.com)
