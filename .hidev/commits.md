@@ -3,6 +3,7 @@ hiqdev/omnipay-qiwi commits history
 
 ## Under development
 
+    - 17a9d69 2015-11-09 php-cs-fixed (sol@hiqdev.com)
     - 70c1245 2015-11-09 started redoing to 'omnipay-qiwi' (sol@hiqdev.com)
     - 00ea303 2015-10-31 fixed '_secret' <- 'secret' (sol@hiqdev.com)
 - Added basics
