@@ -3,6 +3,11 @@ hiqdev/omnipay-qiwi commits history
 
 ## Under development
 
+- Redone to `omnipay-qiwi`
+    - 7bd4792 2015-11-14 php-cs-fixed (sol@hiqdev.com)
+    - 254d86a 2015-11-14 added actual code (sol@hiqdev.com)
+    - b5eb446 2015-11-14 Merge pull request #1 from Xakki/patch-1 (sol@hiqdev.com)
+    - 58b84af 2015-11-14 Update Merchant.php (xakki@ya.ru)
     - 6b495f7 2015-11-11 fixed namespace (sol@hiqdev.com)
     - 17a9d69 2015-11-09 php-cs-fixed (sol@hiqdev.com)
     - 70c1245 2015-11-09 started redoing to 'omnipay-qiwi' (sol@hiqdev.com)
