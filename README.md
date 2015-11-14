@@ -31,7 +31,7 @@ to the require section of your composer.json.
 
 ## License
 
-This project is released under the terms of the MIT [license](https://github.com/hiqdev/omnipay-qiwi/blob/master/LICENSE).
+This project is released under the terms of the MIT [license](LICENSE).
 Read more [here](http://choosealicense.com/licenses/mit).
 
 Copyright © 2015, HiQDev (http://hiqdev.com/)
