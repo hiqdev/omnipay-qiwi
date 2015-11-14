@@ -17,7 +17,7 @@ class Merchant extends \hiqdev\php\merchant\Merchant
         'system'      => 'qiwi',
         'label'       => 'Qiwi',
         'method'      => 'GET',
-        'checkUrl'    => 'https://ishop.qiwi.ru/xml';
+        'checkUrl'    => 'https://ishop.qiwi.ru/xml',
         'actionUrl'   => 'https://w.qiwi.com/order/external/create.action',
         'confirmText' => '<?xml version="1.0"?> <result><result_code>0</result_code></result>',
     ];
@@ -36,7 +36,7 @@ class Merchant extends \hiqdev\php\merchant\Merchant
         ];
     }
 
-    public function validateConfirmation($data)
+    public function validateConfirmation($data) {
         $bill = $this->_fetchBill($data);
         if (is_string($bill)) {
             return $bill;
