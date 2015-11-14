@@ -1,12 +1,12 @@
 <?php
 
 /*
- * Qiwi plugin for PHP merchant library
+ * Qiwi driver for Omnipay PHP payment library
  *
- * @link      https://github.com/hiqdev/php-merchant-qiwi
- * @package   php-merchant-qiwi
- * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015, HiQDev (https://hiqdev.com/)
+ * @link      https://github.com/hiqdev/omnipay-qiwi
+ * @package   omnipay-qiwi
+ * @license   MIT
+ * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
  */
 
 namespace hiqdev\php\merchant\qiwi;
@@ -36,17 +36,18 @@ class Merchant extends \hiqdev\php\merchant\Merchant
         ];
     }
 
-    public function validateConfirmation($data) {
+    public function validateConfirmation($data)
+    {
         $bill = $this->_fetchBill($data);
         if (is_string($bill)) {
             return $bill;
         }
-        $time = explode('-',$bill['id'])[1];
+        $time = explode('-', $bill['id'])[1];
         $this->mset([
         //  'from'  => ??? TODO need some from
             'txn'   => $data['order'],
             'sum'   => floatval($bill['sum']),
-            'time'  => date('c', $time)
+            'time'  => date('c', $time),
         ]);
         return true;
     }
@@ -57,15 +58,19 @@ class Merchant extends \hiqdev\php\merchant\Merchant
         if (!$order) {
             return 'No order';
         }
-        for ($i=0; $i<10; $i++) {
+        for ($i = 0; $i < 10; ++$i) {
             sleep(1);
             $qiwiRequest = $this->fetchQiwiResponse($order, $this->purse, $this->_secret);
             if (!$qiwiRequest) {
                 return 'Server failure';
             }
             $bill = $qiwiRequest->{'bills-list'}->bill;
-            if ($bill['status'] == 60) return $bill;
-            if ($bill['status'] == 52) continue;
+            if ($bill['status'] === 60) {
+                return $bill;
+            }
+            if ($bill['status'] === 52) {
+                continue;
+            }
             return 'Wrong status';
         }
         return 'Too many tries';
@@ -77,10 +82,10 @@ class Merchant extends \hiqdev\php\merchant\Merchant
         <request>
             <protocol-version>4.00</protocol-version>
             <request-type>33</request-type>
-            <terminal-id>'.$login.'</terminal-id>
-            <extra name="password">'.$password.'</extra>
+            <terminal-id>' . $login . '</terminal-id>
+            <extra name="password">' . $password . '</extra>
             <bills-list>
-            <bill txn-id="'.$txnId.'"/>
+            <bill txn-id="' . $txnId . '"/>
             </bills-list>
         </request>';
         $res = static::curl($this->checkUrl, $xml);
