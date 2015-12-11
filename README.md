@@ -3,8 +3,9 @@ Omnipay: Qiwi
 
 **Qiwi driver for Omnipay PHP payment library**
 
-[![Latest Stable Version](https://poser.pugx.org/hiqdev/omnipay-qiwi/v/stable)](//packagist.org/packages/hiqdev/omnipay-qiwi)
-[![Total Downloads](https://poser.pugx.org/hiqdev/omnipay-qiwi/downloads)](//packagist.org/packages/hiqdev/omnipay-qiwi)
+[![Latest Stable Version](https://poser.pugx.org/hiqdev/omnipay-qiwi/v/stable)](https://packagist.org/packages/hiqdev/omnipay-qiwi)
+[![Total Downloads](https://poser.pugx.org/hiqdev/omnipay-qiwi/downloads)](https://packagist.org/packages/hiqdev/omnipay-qiwi)
+[![Build Status](https://img.shields.io/travis/hiqdev/omnipay-qiwi.svg)](https://travis-ci.org/hiqdev/omnipay-qiwi)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:omnipay-qiwi/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:omnipay-qiwi/dev-master)
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
@@ -17,7 +18,7 @@ The preferred way to install this library is through [composer](http://getcompos
 
 Either run
 
-```
+```sh
 php composer.phar require "hiqdev/omnipay-qiwi"
 ```
 
