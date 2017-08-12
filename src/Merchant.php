@@ -1,12 +1,11 @@
 <?php
-
-/*
+/**
  * Qiwi driver for Omnipay PHP payment library
  *
  * @link      https://github.com/hiqdev/omnipay-qiwi
  * @package   omnipay-qiwi
  * @license   MIT
- * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
 namespace hiqdev\php\merchant\qiwi;
